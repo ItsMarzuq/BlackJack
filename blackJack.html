@@ -1,31 +1,51 @@
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-
-    <div class="mainHeading">
-        <h1>BlackJack</h1>
+    <div class="mainContent">
+        <div class="mainHeading">
+            <h1>BlackJack</h1>
+        </div>
+        <div class="chips">
+            <h2 id="chips-el">Your Chips: 100</h2>
+        </div>
+        <h2 id="message-el">Do you want to Start?</h2>
+        <div class="Status">
+        <div class="playerStatus">
+            <div class="Cards">
+                <h2 id="statusHeading">Player Details:</h2>
+                <h2 id="cards-el"></h2>
+            </div>
+            <div class="Sum">
+                <h2 id="sum-el"></h2>
+            </div>
+        </div>
+        <div class="dealerStatus">
+            <div class="Cards">
+                <h2 id="statusHeading">Dealer Details:</h2>
+                <h2 id="dealerCards-el"></h2>
+            </div>
+            <div class="Sum">
+                <h2 id="dealerSum-el"></h2>
+            </div>
+        </div>
     </div>
-    <h2 id="message-el">Do you want to Start?</h2>
-
-    <div class="Cards">
-        <h2 id="cards-el"></h2>
-    </div>
-    <div class="Sum">
-        <h2 id="sum-el"></h2>
-    </div>
-    <div class="buttons">
-        <button id="start-btn" onclick="startGame()">START</button>
-    </div>
-    <div class="buttons">
-        <button id="restart-btn" onclick="restartGame()">RESTART</button> 
-        <button id="new-btn" onclick="newCard()">NEW CARD</button>
-    </div>
-    <div class="playerInfo">
-        <h2 id="player-el"></h2>
-    </div>
-    <div class="chips">
-        <h2 id="chips-el">Your Chips: 100</h2>
+        <div class="buttons">
+            <button id="start-btn" onclick="startGame()">START</button>
+        </div>
+        <div class="buttons">
+            <button id="restart-btn" onclick="restartGame()">RESTART</button>
+            <button id="new-btn" onclick="newCard()">NEW CARD</button>
+            <button id="stand-btn" onclick="stand()">STAND</button>
+        </div>
+        <div class="playerInfo">
+            <h2 id="player-el"></h2>
+        </div>
     </div>
     <script src="blackJack.js"></script>
 </body>
